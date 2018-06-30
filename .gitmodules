@@ -1,0 +1,3 @@
+[submodule "CVCalendar"]
+	path = CVCalendar
+	url = https://github.com/CVCalendar/CVCalendar.git

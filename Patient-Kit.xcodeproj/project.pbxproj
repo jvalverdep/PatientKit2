@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE371320AB242E00C6C64F /* Main.storyboard */; };
+		7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */; };
+		9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100507E20AA0D9B008AB1DC /* AppDelegate.swift */; };
+		9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */; };
+		9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100508820AA0D9B008AB1DC /* Assets.xcassets */; };
+		9100509720AA0D9B008AB1DC /* Patient_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */; };
+		910050A420AA0ED2008AB1DC /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A320AA0ED2008AB1DC /* Authentication.storyboard */; };
+		910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910050A520AA0EE5008AB1DC /* Launcher.storyboard */; };
+		910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050A820AA0F3C008AB1DC /* LoginViewController.swift */; };
+		910050AE20AA143C008AB1DC /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050AD20AA143C008AB1DC /* Gradient.swift */; };
+		910050B120AA1610008AB1DC /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B020AA1610008AB1DC /* AppColor.swift */; };
+		910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */; };
+		BBD6E869C13934536A587AA0 /* Pods_Patient_KitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */; };
+		CE63D35620E77F2B008EDB59 /* DoctorWorkHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63D35520E77F2B008EDB59 /* DoctorWorkHour.swift */; };
+		CE63D35820E79118008EDB59 /* ConfirmOrCancelAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63D35720E79118008EDB59 /* ConfirmOrCancelAppointmentViewController.swift */; };
+		CE8309C220E42A3F0048F44E /* OperationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8309C120E42A3F0048F44E /* OperationTime.swift */; };
+		CE8309C420E435B50048F44E /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8309C320E435B50048F44E /* Treatment.swift */; };
+		CE8309C620E436E90048F44E /* TreatmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8309C520E436E90048F44E /* TreatmentDetail.swift */; };
+		CE8309C820E437630048F44E /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8309C720E437630048F44E /* Frequency.swift */; };
+		CE8309CA20E437CF0048F44E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8309C920E437CF0048F44E /* Route.swift */; };
+		CEE4A88C20E42778005E7ACB /* DoctorOperationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4A88B20E42778005E7ACB /* DoctorOperationTime.swift */; };
+		E78C827E319AC5B8387F1DE4 /* Pods_Patient_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */; };
+		F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4193BA320B06BEA003DA391 /* Settings.storyboard */; };
+		F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */; };
+		F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */; };
+		F4DCC07D20B3BC52006259CC /* MyAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */; };
+		F4DCC08120B3BDA4006259CC /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */; };
+		F4DCC08220B3BDA4006259CC /* AppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */; };
+		F4DCC09A20B3BFAA006259CC /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */; };
+		F4DCC09B20B3BFAA006259CC /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */; };
+		F4DCC09C20B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */; };
+		F4DCC09D20B3BFAA006259CC /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */; };
+		F4DCC09E20B3BFAA006259CC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */; };
+		F4DCC09F20B3BFAA006259CC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */; };
+		F4DCC0A020B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */; };
+		F4DCC0A120B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */; };
+		F4DCC0A220B3BFAA006259CC /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */; };
+		F4DCC0A320B3BFAA006259CC /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */; };
+		F4DCC0A420B3BFAA006259CC /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09120B3BFAA006259CC /* OFL.txt */; };
+		F4DCC0A520B3BFAA006259CC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */; };
+		F4DCC0A620B3BFAA006259CC /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */; };
+		F4DCC0A720B3BFAA006259CC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */; };
+		F4DCC0A820B3BFAA006259CC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */; };
+		F4DCC0A920B3BFAA006259CC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */; };
+		F4DCC0AA20B3BFAA006259CC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */; };
+		F4DCC0AB20B3BFAA006259CC /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */; };
+		F4DCC0AC20B3BFAA006259CC /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */; };
+		F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0AD20B3C362006259CC /* Appointment.swift */; };
+		F4DCC0B320B3DAD9006259CC /* AppointmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */; };
+		F4DCC0B520B43FE3006259CC /* CreateAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */; };
+		F4DFA51320B90D51000C73E7 /* HealthUpcAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */; };
+		F4DFA51520B90F78000C73E7 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51420B90F78000C73E7 /* Patient.swift */; };
+		F4DFA51720B90FF5000C73E7 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51620B90FF5000C73E7 /* Doctor.swift */; };
+		F4DFA51920B96AE6000C73E7 /* UtilDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFA51820B96AE6000C73E7 /* UtilDates.swift */; };
+		F4E613C520B0667A005A738F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C420B0667A005A738F /* Alert.swift */; };
+		F4E613C720B06689005A738F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E613C620B06689005A738F /* Notification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9100509320AA0D9B008AB1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9100507320AA0D9B008AB1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9100507A20AA0D9B008AB1DC;
+			remoteInfo = "Patient-Kit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patient_KitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Patient_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.release.xcconfig"; sourceTree = "<group>"; };
+		7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-KitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FCE371320AB242E00C6C64F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageAppointment.storyboard; sourceTree = "<group>"; };
+		9100507B20AA0D9B008AB1DC /* Patient-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9100507E20AA0D9B008AB1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9100508620AA0D9B008AB1DC /* Patient_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Patient_Kit.xcdatamodel; sourceTree = "<group>"; };
+		9100508820AA0D9B008AB1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9100508D20AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Patient-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_KitTests.swift; sourceTree = "<group>"; };
+		9100509820AA0D9B008AB1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910050A320AA0ED2008AB1DC /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		910050A520AA0EE5008AB1DC /* Launcher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launcher.storyboard; sourceTree = "<group>"; };
+		910050A820AA0F3C008AB1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		910050AD20AA143C008AB1DC /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		910050B020AA1610008AB1DC /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		CE63D35520E77F2B008EDB59 /* DoctorWorkHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorWorkHour.swift; sourceTree = "<group>"; };
+		CE63D35720E79118008EDB59 /* ConfirmOrCancelAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrCancelAppointmentViewController.swift; sourceTree = "<group>"; };
+		CE8309C120E42A3F0048F44E /* OperationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTime.swift; sourceTree = "<group>"; };
+		CE8309C320E435B50048F44E /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		CE8309C520E436E90048F44E /* TreatmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentDetail.swift; sourceTree = "<group>"; };
+		CE8309C720E437630048F44E /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		CE8309C920E437CF0048F44E /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CEE4A88B20E42778005E7ACB /* DoctorOperationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorOperationTime.swift; sourceTree = "<group>"; };
+		F4193BA320B06BEA003DA391 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsViewController.swift; sourceTree = "<group>"; };
+		F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC09120B3BFAA006259CC /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F4DCC0AD20B3C362006259CC /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewController.swift; sourceTree = "<group>"; };
+		F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointmentViewController.swift; sourceTree = "<group>"; };
+		F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpcAPI.swift; sourceTree = "<group>"; };
+		F4DFA51420B90F78000C73E7 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		F4DFA51620B90FF5000C73E7 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		F4DFA51820B96AE6000C73E7 /* UtilDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilDates.swift; sourceTree = "<group>"; };
+		F4E613C420B0667A005A738F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F4E613C620B06689005A738F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patient-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9100507820AA0D9B008AB1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78C827E319AC5B8387F1DE4 /* Pods_Patient_Kit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9100508F20AA0D9B008AB1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD6E869C13934536A587AA0 /* Pods_Patient_KitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FCE373520AB2D3500C6C64F /* ManageAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC07C20B3BC52006259CC /* MyAppointmentsViewController.swift */,
+				F4DCC0B220B3DAD9006259CC /* AppointmentDetailViewController.swift */,
+				F4DCC0B420B43FE3006259CC /* CreateAppointmentViewController.swift */,
+				CE63D35720E79118008EDB59 /* ConfirmOrCancelAppointmentViewController.swift */,
+			);
+			path = ManageAppointment;
+			sourceTree = "<group>";
+		};
+		9100507220AA0D9B008AB1DC = {
+			isa = PBXGroup;
+			children = (
+				9100507D20AA0D9B008AB1DC /* Patient-Kit */,
+				9100509520AA0D9B008AB1DC /* Patient-KitTests */,
+				9100507C20AA0D9B008AB1DC /* Products */,
+				C688AAA3C3580BF0BCBAD356 /* Pods */,
+				DE899F19300B93256D7664B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9100507C20AA0D9B008AB1DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9100507B20AA0D9B008AB1DC /* Patient-Kit.app */,
+				9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9100507D20AA0D9B008AB1DC /* Patient-Kit */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFA51120B90A77000C73E7 /* Network */,
+				F4DCC08320B3BF82006259CC /* Resources */,
+				F430372320B071B6002967B3 /* View */,
+				F4E613C320B0666C005A738F /* Model */,
+				910050AC20AA1423008AB1DC /* Util */,
+				910050AA20AA0F69008AB1DC /* Storage */,
+				910050A220AA0EAB008AB1DC /* Controller */,
+				910050A120AA0EA2008AB1DC /* Storyboard */,
+				9100507E20AA0D9B008AB1DC /* AppDelegate.swift */,
+				9100508820AA0D9B008AB1DC /* Assets.xcassets */,
+				9100508D20AA0D9B008AB1DC /* Info.plist */,
+			);
+			path = "Patient-Kit";
+			sourceTree = "<group>";
+		};
+		9100509520AA0D9B008AB1DC /* Patient-KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9100509620AA0D9B008AB1DC /* Patient_KitTests.swift */,
+				9100509820AA0D9B008AB1DC /* Info.plist */,
+			);
+			path = "Patient-KitTests";
+			sourceTree = "<group>";
+		};
+		910050A120AA0EA2008AB1DC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				910050A320AA0ED2008AB1DC /* Authentication.storyboard */,
+				910050A520AA0EE5008AB1DC /* Launcher.storyboard */,
+				7FCE371320AB242E00C6C64F /* Main.storyboard */,
+				7FCE373620AB308200C6C64F /* ManageAppointment.storyboard */,
+				F4193BA320B06BEA003DA391 /* Settings.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		910050A220AA0EAB008AB1DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FCE373520AB2D3500C6C64F /* ManageAppointment */,
+				910050A720AA0F24008AB1DC /* Authentication */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		910050A720AA0F24008AB1DC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				910050B220AA1A50008AB1DC /* CreateAccountViewController.swift */,
+				910050A820AA0F3C008AB1DC /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		910050AA20AA0F69008AB1DC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		910050AC20AA1423008AB1DC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				910050AD20AA143C008AB1DC /* Gradient.swift */,
+				910050B020AA1610008AB1DC /* AppColor.swift */,
+				F4DFA51820B96AE6000C73E7 /* UtilDates.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C688AAA3C3580BF0BCBAD356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */,
+				6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */,
+				273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */,
+				7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE899F19300B93256D7664B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35E387123E72EB9286CE2A3D /* Pods_Patient_Kit.framework */,
+				310623BFCD93044DD7B51DD0 /* Pods_Patient_KitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F430372320B071B6002967B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC07E20B3BD76006259CC /* AppointmentTableCell */,
+				F430372420B071BC002967B3 /* ScheduleTableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F430372420B071BC002967B3 /* ScheduleTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				F430372520B071E4002967B3 /* ScheduleTableViewCell.swift */,
+				F430372620B071E4002967B3 /* ScheduleTableViewCell.xib */,
+			);
+			path = ScheduleTableCell;
+			sourceTree = "<group>";
+		};
+		F4DCC07E20B3BD76006259CC /* AppointmentTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC07F20B3BDA4006259CC /* AppointmentTableViewCell.swift */,
+				F4DCC08020B3BDA4006259CC /* AppointmentTableViewCell.xib */,
+			);
+			path = AppointmentTableCell;
+			sourceTree = "<group>";
+		};
+		F4DCC08320B3BF82006259CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08420B3BF89006259CC /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4DCC08420B3BF89006259CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08620B3BFA9006259CC /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4DCC08620B3BFA9006259CC /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCC08720B3BFA9006259CC /* Poppins-ExtraLight.ttf */,
+				F4DCC08820B3BFA9006259CC /* Poppins-ThinItalic.ttf */,
+				F4DCC08920B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf */,
+				F4DCC08A20B3BFAA006259CC /* Poppins-BoldItalic.ttf */,
+				F4DCC08B20B3BFAA006259CC /* Poppins-Light.ttf */,
+				F4DCC08C20B3BFAA006259CC /* Poppins-Medium.ttf */,
+				F4DCC08D20B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf */,
+				F4DCC08E20B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf */,
+				F4DCC08F20B3BFAA006259CC /* Poppins-ExtraBold.ttf */,
+				F4DCC09020B3BFAA006259CC /* Poppins-BlackItalic.ttf */,
+				F4DCC09120B3BFAA006259CC /* OFL.txt */,
+				F4DCC09220B3BFAA006259CC /* Poppins-Regular.ttf */,
+				F4DCC09320B3BFAA006259CC /* Poppins-LightItalic.ttf */,
+				F4DCC09420B3BFAA006259CC /* Poppins-Bold.ttf */,
+				F4DCC09520B3BFAA006259CC /* Poppins-Black.ttf */,
+				F4DCC09620B3BFAA006259CC /* Poppins-Thin.ttf */,
+				F4DCC09720B3BFAA006259CC /* Poppins-SemiBold.ttf */,
+				F4DCC09820B3BFAA006259CC /* Poppins-Italic.ttf */,
+				F4DCC09920B3BFAA006259CC /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		F4DFA51120B90A77000C73E7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFA51220B90D51000C73E7 /* HealthUpcAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4E613C320B0666C005A738F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4E613C420B0667A005A738F /* Alert.swift */,
+				F4E613C620B06689005A738F /* Notification.swift */,
+				F4DCC0AD20B3C362006259CC /* Appointment.swift */,
+				F4DFA51420B90F78000C73E7 /* Patient.swift */,
+				F4DFA51620B90FF5000C73E7 /* Doctor.swift */,
+				CEE4A88B20E42778005E7ACB /* DoctorOperationTime.swift */,
+				CE8309C120E42A3F0048F44E /* OperationTime.swift */,
+				CE8309C320E435B50048F44E /* Treatment.swift */,
+				CE8309C520E436E90048F44E /* TreatmentDetail.swift */,
+				CE8309C720E437630048F44E /* Frequency.swift */,
+				CE8309C920E437CF0048F44E /* Route.swift */,
+				CE63D35520E77F2B008EDB59 /* DoctorWorkHour.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9100507A20AA0D9B008AB1DC /* Patient-Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9100509B20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-Kit" */;
+			buildPhases = (
+				734135BE4EFE710E598FD47F /* [CP] Check Pods Manifest.lock */,
+				9100507720AA0D9B008AB1DC /* Sources */,
+				9100507820AA0D9B008AB1DC /* Frameworks */,
+				9100507920AA0D9B008AB1DC /* Resources */,
+				B156B5016506B7B53EEEFCD8 /* [CP] Embed Pods Frameworks */,
+				923170F3DD63472F9C0D5F41 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Patient-Kit";
+			productName = "Patient-Kit";
+			productReference = 9100507B20AA0D9B008AB1DC /* Patient-Kit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9100509120AA0D9B008AB1DC /* Patient-KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9100509E20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-KitTests" */;
+			buildPhases = (
+				A1F197A167074525EE0BD931 /* [CP] Check Pods Manifest.lock */,
+				9100508E20AA0D9B008AB1DC /* Sources */,
+				9100508F20AA0D9B008AB1DC /* Frameworks */,
+				9100509020AA0D9B008AB1DC /* Resources */,
+				C2AE3062989F14464E4C4616 /* [CP] Embed Pods Frameworks */,
+				E9585BB9756A0820DC816951 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9100509420AA0D9B008AB1DC /* PBXTargetDependency */,
+			);
+			name = "Patient-KitTests";
+			productName = "Patient-KitTests";
+			productReference = 9100509220AA0D9B008AB1DC /* Patient-KitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9100507320AA0D9B008AB1DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = UPC;
+				TargetAttributes = {
+					9100507A20AA0D9B008AB1DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9100509120AA0D9B008AB1DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9100507A20AA0D9B008AB1DC;
+					};
+				};
+			};
+			buildConfigurationList = 9100507620AA0D9B008AB1DC /* Build configuration list for PBXProject "Patient-Kit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9100507220AA0D9B008AB1DC;
+			productRefGroup = 9100507C20AA0D9B008AB1DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9100507A20AA0D9B008AB1DC /* Patient-Kit */,
+				9100509120AA0D9B008AB1DC /* Patient-KitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9100507920AA0D9B008AB1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910050A620AA0EE5008AB1DC /* Launcher.storyboard in Resources */,
+				F4DCC09F20B3BFAA006259CC /* Poppins-Medium.ttf in Resources */,
+				F4DCC09E20B3BFAA006259CC /* Poppins-Light.ttf in Resources */,
+				9100508920AA0D9B008AB1DC /* Assets.xcassets in Resources */,
+				F4DCC0A820B3BFAA006259CC /* Poppins-Black.ttf in Resources */,
+				7FCE373720AB308200C6C64F /* ManageAppointment.storyboard in Resources */,
+				F4DCC0A020B3BFAA006259CC /* Poppins-SemiBoldItalic.ttf in Resources */,
+				F4DCC0AC20B3BFAA006259CC /* Poppins-MediumItalic.ttf in Resources */,
+				F4DCC09D20B3BFAA006259CC /* Poppins-BoldItalic.ttf in Resources */,
+				F4DCC0A720B3BFAA006259CC /* Poppins-Bold.ttf in Resources */,
+				F4DCC09A20B3BFAA006259CC /* Poppins-ExtraLight.ttf in Resources */,
+				F4DCC0A120B3BFAA006259CC /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				F4DCC0A420B3BFAA006259CC /* OFL.txt in Resources */,
+				F4193BA420B06BEA003DA391 /* Settings.storyboard in Resources */,
+				910050A420AA0ED2008AB1DC /* Authentication.storyboard in Resources */,
+				F4DCC09C20B3BFAA006259CC /* Poppins-ExtraLightItalic.ttf in Resources */,
+				7FCE371420AB242E00C6C64F /* Main.storyboard in Resources */,
+				F4DCC09B20B3BFAA006259CC /* Poppins-ThinItalic.ttf in Resources */,
+				F4DCC0A220B3BFAA006259CC /* Poppins-ExtraBold.ttf in Resources */,
+				F4DCC0A620B3BFAA006259CC /* Poppins-LightItalic.ttf in Resources */,
+				F430372820B071E4002967B3 /* ScheduleTableViewCell.xib in Resources */,
+				F4DCC0AB20B3BFAA006259CC /* Poppins-Italic.ttf in Resources */,
+				F4DCC0AA20B3BFAA006259CC /* Poppins-SemiBold.ttf in Resources */,
+				F4DCC0A320B3BFAA006259CC /* Poppins-BlackItalic.ttf in Resources */,
+				F4DCC0A920B3BFAA006259CC /* Poppins-Thin.ttf in Resources */,
+				F4DCC08220B3BDA4006259CC /* AppointmentTableViewCell.xib in Resources */,
+				F4DCC0A520B3BFAA006259CC /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9100509020AA0D9B008AB1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		734135BE4EFE710E598FD47F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patient-Kit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923170F3DD63472F9C0D5F41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1F197A167074525EE0BD931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patient-KitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B156B5016506B7B53EEEFCD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-Kit/Pods-Patient-Kit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AE3062989F14464E4C4616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9585BB9756A0820DC816951 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patient-KitTests/Pods-Patient-KitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9100507720AA0D9B008AB1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE4A88C20E42778005E7ACB /* DoctorOperationTime.swift in Sources */,
+				CE63D35620E77F2B008EDB59 /* DoctorWorkHour.swift in Sources */,
+				F4E613C520B0667A005A738F /* Alert.swift in Sources */,
+				F430372720B071E4002967B3 /* ScheduleTableViewCell.swift in Sources */,
+				CE63D35820E79118008EDB59 /* ConfirmOrCancelAppointmentViewController.swift in Sources */,
+				F4DCC07D20B3BC52006259CC /* MyAppointmentsViewController.swift in Sources */,
+				F4DCC0AE20B3C362006259CC /* Appointment.swift in Sources */,
+				910050B320AA1A50008AB1DC /* CreateAccountViewController.swift in Sources */,
+				F4DFA51720B90FF5000C73E7 /* Doctor.swift in Sources */,
+				910050A920AA0F3C008AB1DC /* LoginViewController.swift in Sources */,
+				F4DCC0B320B3DAD9006259CC /* AppointmentDetailViewController.swift in Sources */,
+				910050B120AA1610008AB1DC /* AppColor.swift in Sources */,
+				CE8309C220E42A3F0048F44E /* OperationTime.swift in Sources */,
+				F4DFA51320B90D51000C73E7 /* HealthUpcAPI.swift in Sources */,
+				9100508720AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld in Sources */,
+				F4E613C720B06689005A738F /* Notification.swift in Sources */,
+				9100507F20AA0D9B008AB1DC /* AppDelegate.swift in Sources */,
+				910050AE20AA143C008AB1DC /* Gradient.swift in Sources */,
+				F4DFA51520B90F78000C73E7 /* Patient.swift in Sources */,
+				F4DCC0B520B43FE3006259CC /* CreateAppointmentViewController.swift in Sources */,
+				F4DCC08120B3BDA4006259CC /* AppointmentTableViewCell.swift in Sources */,
+				F4DFA51920B96AE6000C73E7 /* UtilDates.swift in Sources */,
+				CE8309C820E437630048F44E /* Frequency.swift in Sources */,
+				CE8309CA20E437CF0048F44E /* Route.swift in Sources */,
+				CE8309C420E435B50048F44E /* Treatment.swift in Sources */,
+				CE8309C620E436E90048F44E /* TreatmentDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9100508E20AA0D9B008AB1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9100509720AA0D9B008AB1DC /* Patient_KitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9100509420AA0D9B008AB1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9100507A20AA0D9B008AB1DC /* Patient-Kit */;
+			targetProxy = 9100509320AA0D9B008AB1DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9100509920AA0D9B008AB1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9100509A20AA0D9B008AB1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9100509C20AA0D9B008AB1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDC8AF28C21F104A29A3A57 /* Pods-Patient-Kit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				INFOPLIST_FILE = "Patient-Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9100509D20AA0D9B008AB1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E29735FC44A780B8C81D095 /* Pods-Patient-Kit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				INFOPLIST_FILE = "Patient-Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9100509F20AA0D9B008AB1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273F01815FEBCBE45A845E7A /* Pods-Patient-KitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5F6DV8X9;
+				INFOPLIST_FILE = "Patient-KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patient-Kit.app/Patient-Kit";
+			};
+			name = Debug;
+		};
+		910050A020AA0D9B008AB1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA3A894077B7B62A6BDF547 /* Pods-Patient-KitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5F6DV8X9;
+				INFOPLIST_FILE = "Patient-KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "upc.edu.pe.Patient-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patient-Kit.app/Patient-Kit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9100507620AA0D9B008AB1DC /* Build configuration list for PBXProject "Patient-Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9100509920AA0D9B008AB1DC /* Debug */,
+				9100509A20AA0D9B008AB1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9100509B20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9100509C20AA0D9B008AB1DC /* Debug */,
+				9100509D20AA0D9B008AB1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9100509E20AA0D9B008AB1DC /* Build configuration list for PBXNativeTarget "Patient-KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9100509F20AA0D9B008AB1DC /* Debug */,
+				910050A020AA0D9B008AB1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9100508520AA0D9B008AB1DC /* Patient_Kit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9100508620AA0D9B008AB1DC /* Patient_Kit.xcdatamodel */,
+			);
+			currentVersion = 9100508620AA0D9B008AB1DC /* Patient_Kit.xcdatamodel */;
+			path = Patient_Kit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9100507320AA0D9B008AB1DC /* Project object */;
+}
